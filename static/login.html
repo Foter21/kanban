@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a3326">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/corp.css">
+  <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+  <link rel="icon" type="image/x-icon" sizes="48x48" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+  <title>Entrar | KANBANTS</title>
+</head>
+<body>
+  <div class="login-shell">
+    <section class="login-side">
+      <div class="login-card">
+        <a class="login-brand" href="/" aria-label="KANBANTS - voltar à página inicial"><span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="5" height="16" rx="1.5"/><rect x="10" y="4" width="5" height="10" rx="1.5"/><rect x="17" y="4" width="4" height="13" rx="1.5"/></svg></span><span>KANBAN<b>TS</b></span></a>
+        <span class="auth-kicker" id="kicker">ACESSO</span>
+        <h2 id="heading">Entrar na sua conta</h2>
+        <p class="lead" id="sub"></p>
+        <div id="message" class="message error" role="alert" hidden></div>
+        <form id="authForm" novalidate>
+          <label id="nameLabel" for="name" hidden>Nome completo</label>
+          <div id="nameWrap" hidden><input id="name" type="text" maxlength="60" placeholder="Seu nome" autocomplete="name"></div>
+          <label for="email">E-mail corporativo</label>
+          <input id="email" type="email" placeholder="nome@empresa.com" autocomplete="email">
+          <label for="password">Senha</label>
+          <div class="pw-wrap"><input id="password" type="password" placeholder="Mínimo de 6 caracteres" autocomplete="current-password"><button type="button" class="pw-toggle" id="togglePw" aria-pressed="false" aria-label="Mostrar ou ocultar senha">Mostrar</button></div>
+          <button class="auth-submit" id="submitBtn" type="submit">Entrar</button>
+        </form>
+        <p class="switch-auth"><span id="switchText">Ainda não tem conta?</span> <button type="button" id="switchBtn">Criar conta</button></p>
+        <p class="switch-auth"><a class="back-home" href="/">← Voltar ao início</a></p>
+      </div>
+    </section>
+    <section class="login-hero" aria-hidden="true">
+      <h1>Gestão de projetos <em>clara</em>, para equipes que entregam.</h1>
+      <ul>
+        <li>Quadros compartilhados com papéis de dono, editor e leitor</li>
+        <li>Tarefas com responsável, prazo, prioridade e checklist</li>
+        <li>Comentários registrados com autor e data</li>
+        <li>Histórico de atividades e atualização automática</li>
+      </ul>
+    </section>
+  </div>
+  <script src="/static/api.js"></script>
+  <script src="/static/auth.js"></script>
+</body>
+</html>
